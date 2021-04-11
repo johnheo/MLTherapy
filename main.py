@@ -1,5 +1,7 @@
 from face import get_emotions
 from cam import get_imagewebcam
+from publisher import send_mqtt
 import json
-
-print(json.dumps(get_emotions(get_imagewebcam()), sort_keys=True, indent=2))
+emotion = get_emotions(get_imagewebcam())
+print(emotion)
+send_mqtt(emotion)
