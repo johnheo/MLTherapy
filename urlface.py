@@ -17,6 +17,20 @@ params = {
 response = requests.post(face_api_url, params=params,
                          headers=headers, json={"url": image_url})
 data = response.json()
-print(json.dumps(data, sort_keys=True, indent=2))
 emotions = data[0]["faceAttributes"]["emotion"]
 print(json.dumps(emotions, sort_keys=True, indent=2))
+neutral = emotions["neutral"]
+contempt = emotions["contempt"]
+sadness = emotions["sadness"]
+happiness = emotions["happiness"]
+mood = ['negative', 'positive', 'neutral']
+if (contempt > .4 or sadness > .4 or contempt+sadness >.4):
+    mood[0]
+else if (happiness >.5):
+    mood[1]
+else:
+    mood[2]
+    
+print(type(data1))
+print(data1)
+
