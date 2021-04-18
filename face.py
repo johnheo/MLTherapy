@@ -23,7 +23,7 @@ def get_emotions(img_path):
     try: 
         emotions = data[0]["faceAttributes"]["emotion"]
         #print(json.dumps(emotions, sort_keys=True, indent=2))
-        neutral = emotions["neutral"]
+        #neutral = emotions["neutral"]
         contempt = emotions["contempt"]
         sadness = emotions["sadness"]
         happiness = emotions["happiness"]

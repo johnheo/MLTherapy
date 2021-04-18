@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>MLTherapy</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="main-negative container">
+      <!-- yellow -->
+      <div class="explanation">
+        <h1>We hope this helps.</h1>
+        <h2><strong>Yellow</strong> lighting is used in hospitals to relax patients, alleviate depressive symptoms, and help with physical and bodily pain. </h2>
+        <h2><strong>Romantic music</strong> gives us comfort and feeds us the emotions of love, making us feel warm and cozy at heart.</h2>
+      </div>
+    </div>
+    
+  </body>
+  <script>
+      // Create a client instance
+      client = new Paho.MQTT.Client('broker.hivemq.com', 8000, "clienId");
+
+      // set callback handlers
+      client.onConnectionLost = onConnectionLost;
+      client.onMessageArrived = onMessageArrived;
+
+      // connect the client
+      client.connect({onSuccess:onConnect});
+
+      // called when the client connects
+      function onConnect() {
+        // Once a connection has been made, make a subscription and send a message.
+        console.log("onConnect");
+        //client.subscribe("$SYS/#");
+        client.subscribe("hackiot/emotions");
+        message = new Paho.MQTT.Message("negative");
+        message.destinationName = "hackiot/emotions";
+        client.send(message); 
+      }
+
+      // called when the client loses its connection
+      function onConnectionLost(responseObject) {
+        if (responseObject.errorCode !== 0) {
+          console.log("onConnectionLost:"+responseObject.errorMessage);
+        }
+      }
+
+      // called when a message arrives
+      function onMessageArrived(message) {
+        console.log("onMessageArrived:", message.destinationName, message.payloadString);
+      }
+    </script><link rel="stylesheet" type="text/css" href="style.css">
+</html>

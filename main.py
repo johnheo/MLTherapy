@@ -1,5 +1,8 @@
+import os, json,requests, sys, cv2
 from face import get_emotions
 from cam import get_imagewebcam
-import json
+from publisher import send_mqtt
 
-print(json.dumps(get_emotions(get_imagewebcam()), sort_keys=True, indent=2))
+response = get_emotions(get_imagewebcam())
+print(response)
+send_mqtt(response)
