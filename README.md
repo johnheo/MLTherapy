@@ -1,4 +1,4 @@
-# MLTherapy
+# MLTherapy (Music + Light & Machine Learning --> therapy)
 USC IEEE Hack IoT 2021 (1st place)
 
 Members: John Heo, Paul Chen, David Kang, Stan Liu
