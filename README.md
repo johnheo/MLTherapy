@@ -1,6 +1,6 @@
 # MLTherapy (Machine Learning-guided Music & Light Therapy)
 MLTherapy is an integrative platform that helps to improve your psychological wellness!\
-We utilize Microsoft's Face API to sympathize with your emotions and appropriately return a music & light response that suits your mood.\
+We utilize Microsoft's Face API to sympathize with your emotions and appropriately return a music & light response that suits your mood.
 
 **Members**: John Heo, Paul Chen, David Kang, Stan Liu
 
