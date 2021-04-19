@@ -9,3 +9,5 @@ https://youtu.be/6LmMYpy3Cf8 (negative mood)\
 https://youtu.be/t2T2kRFN4iI (neutral mood)
 
 Link to our Pitch Deck: https://docs.google.com/presentation/d/1B-cyQXZ2y82GlFDvfRP441eZA2MLpHT19RbmMZvVOIs/edit?usp=sharing
+
+![alt text](https://github.com/johnheo1128/MLTherapy/pics/hackIoTresult.png?raw=true)
