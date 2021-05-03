@@ -4,7 +4,8 @@ import pygame
 import random
 import os
 from pynput import keyboard
-from soundplayer import SoundPlayer
+#from soundplayer import SoundPlayer
+import playsound 
 
 data = ""
 i = 0
@@ -27,7 +28,7 @@ def callback_emotions(client, userdata, msg):
     print(str(i) +"from callback")
 
 def playmusic(genre):
-    path="/home/pi/Desktop/Musics/" + genre
+    path="/home/pi/Desktop/Music/" + genre
     files=os.listdir(path)
     d=random.choice(files)
     global psong
