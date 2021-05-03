@@ -4,7 +4,8 @@ import pygame
 import random
 import os
 from pynput import keyboard
-from soundplayer import SoundPlayer
+#from soundplayer import SoundPlayer
+import playsound 
 
 data = ""
 i = 0
@@ -27,14 +28,18 @@ def callback_emotions(client, userdata, msg):
     print(str(i) +"from callback")
 
 def playmusic(genre):
-    path="/home/pi/Desktop/Musics/" + genre
+    path="/home/pi/Music/" + genre
     files=os.listdir(path)
     d=random.choice(files)
     global psong
     while (d==psong):
         d=random.choice(files)
     print ("now playing " + d)
-    pygame.mixer.init()
+    pygame.mixer.pre_init(44100, -16, 2, 2048)
+    pygame.init()
+    
+    #default
+    #pygame.mixer.init(frequency=22050, size=-16, channels=2, buffer=4096)
     pygame.mixer.music.load(path+"/"+d)
     psong = d
     pygame.mixer.music.set_volume(1)
@@ -60,14 +65,14 @@ def on_press(key):
         # Pausing the music
             pygame.mixer.music.pause()     
         elif k == 'r':
-          # Resuming the music
+        # Resuming the music
             pygame.mixer.music.unpause()
         elif k == 'e':
-          # Stop the mixer
+        # Stop the mixer
             pygame.mixer.music.stop()
             i = 0
         elif k == 'c':
-          # Stop the mixer
+        # Stop the mixer
             i = 3
     print()
 if __name__ == '__main__':
