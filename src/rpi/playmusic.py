@@ -28,7 +28,7 @@ def callback_emotions(client, userdata, msg):
     print(str(i) +"from callback")
 
 def playmusic(genre):
-    path="/home/pi/Desktop/Music/" + genre
+    path="/home/pi/Music/" + genre
     files=os.listdir(path)
     d=random.choice(files)
     global psong
