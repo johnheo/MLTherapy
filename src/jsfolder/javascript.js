@@ -33,7 +33,7 @@ function take_snapshot() {
               url: "https://junghwanheo.cognitiveservices.azure.com/face/v1.0/detect?" + $.param(params),
               contentType: "application/octet-stream",
               headers: {
-                'Ocp-Apim-Subscription-Key': '726b3914496d489f97b9b41d45b5c543'
+                'Ocp-Apim-Subscription-Key': 'insertyourAPIkey'
               },
               processData: false,
               data: blobData
