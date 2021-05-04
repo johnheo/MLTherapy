@@ -36,7 +36,7 @@ def on_message(client, userdata, msg):
         lcd.setRGB(255,255,0) #yellow
         lcd.setText_norefresh('negative')
     else: #neutral
-        lcd.setRGB(0,0,255) #green
+        lcd.setRGB(0,255,0) #green
         lcd.setText_norefresh('neutral')
 
 if __name__ == '__main__':

@@ -35,7 +35,7 @@ def playmusic(genre):
     while (d==psong):
         d=random.choice(files)
     print ("now playing " + d)
-    pygame.mixer.pre_init(44100, -16, 2, 2048)
+    pygame.mixer.pre_init(44100, -16, 1, 2048)
     pygame.init()
     
     #default
