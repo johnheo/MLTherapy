@@ -1,5 +1,5 @@
 Paul Chen/John Heo
-Demo:https://www.youtube.com/watch?v=hsNnjNmdU6c
+Demo:https://www.youtube.com/watch?v=xHlj1xn_f4o
 Git:https://github.com/johnheo1128/MLTherapy.git
 LCD is connected to the I2C 2 port on the grovepi shield, while the speaker needs to be manually connected and set as default output.  
 Both files inside "rpi" folder are supposed to run on a raspberrypi.
