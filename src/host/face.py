@@ -1,6 +1,5 @@
 from PIL import Image, ImageDraw
 import os, json,requests, sys, cv2
-
 subscription_key = "insertyourAPIkey"
 face_api_url = 'https://junghwanheo.cognitiveservices.azure.com/face/v1.0/detect'
 
