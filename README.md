@@ -6,6 +6,7 @@ We utilize Microsoft's Face API to sympathize with your emotions and appropriate
 
 ## Links to Demo:
 We demonstrated the light-music response using a JBL Bluetooth Speaker and a LCD screen with cloud-based communication link through Raspberry Pi.\
+This project was also refined to become me and Paul's final project for EE 250, an IoT class at USC!
 https://www.youtube.com/watch?v=hsNnjNmdU6c
 
 ## Link to our Pitch Deck:
