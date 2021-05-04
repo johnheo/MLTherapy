@@ -6,9 +6,7 @@ We utilize Microsoft's Face API to sympathize with your emotions and appropriate
 
 ## Links to Demo:
 We demonstrated the light-music response using a JBL Bluetooth Speaker and a LCD screen with cloud-based communication link through Raspberry Pi.\
-https://youtu.be/FvtK2omKUHM (positive mood)\
-https://youtu.be/6LmMYpy3Cf8 (negative mood)\
-https://youtu.be/t2T2kRFN4iI (neutral mood)
+https://www.youtube.com/watch?v=hsNnjNmdU6c
 
 ## Link to our Pitch Deck:
 https://docs.google.com/presentation/d/1B-cyQXZ2y82GlFDvfRP441eZA2MLpHT19RbmMZvVOIs/edit?usp=sharing
